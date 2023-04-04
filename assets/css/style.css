@@ -16,3 +16,28 @@ body {
      in combination with flex css on body */
     flex: 1 0 auto; 
 }
+
+.game-box {
+    height: 30%;
+}
+
+/* Buttons */
+#playBtn {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.button-up {
+    box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 8px;
+    background-color: orangered;
+}
+
+.button-down {
+    box-shadow: rgba(0, 0, 0, 0.64) 0px 1px 3px;
+    background-color: rgb(201, 54, 1);
+}
