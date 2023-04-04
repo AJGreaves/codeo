@@ -2,7 +2,9 @@ fetch('data/questions.json')
     .then(response => response.json())
     .then(data => {
         console.log(data); 
-        displayQuestion(data[0]);
+        let question = data[0];
+        displayQuestion(question);
+        displayAnswerOptions(question);
     })
     .catch(error => console.error(error));
 
@@ -30,7 +32,7 @@ playBtn.addEventListener("mousedown", clickButton);
 playBtn.addEventListener("mouseup", clickButton);
 
 function displayQuestion(question) {
-    console.log(question);
+    console.log(question.challenge);
     document.querySelector("#instruction").innerText = question.instruction;
     let challengeBox = document.querySelector("#challenge");
     challengeBox.innerText = question.challenge;
@@ -39,4 +41,15 @@ function displayQuestion(question) {
     } else if (question.challengeType === "write code") {
         challengeBox.classList.remove("code");
     }
+}
+
+function displayAnswerOptions(question) {
+    console.log(question.answerOptions);
+    let answerOptions = question.answerOptions;
+    let htmlContent = ``
+    for (i = 0; i < answerOptions.length; i++) {
+        htmlContent += `<div class="optionBlock">${answerOptions[i]}</div>`;
+    }
+
+    document.querySelector("#answerOptionsBox").innerHTML = htmlContent;
 }

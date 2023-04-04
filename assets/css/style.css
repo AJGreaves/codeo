@@ -41,6 +41,16 @@ body {
     border-bottom: lightslategray 1px solid;
 }
 
+/* Option blocks - blocks that hold potential pieces of the answers */
+.optionBlock {
+    border: white 1px solid;
+    padding: 5px 12px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
 /* Buttons */
 #playBtn {
     width: 100%;

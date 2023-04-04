@@ -3,7 +3,7 @@
         "instruction": "Describe this code",
         "challenge": "let num = 4;",
         "challengeType": "describe",
-        "answerBlockList": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "it's value"],
+        "answerOptions": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "its value"],
         "validAnswers": [
             "create a variable named 'num' and assign it a value of 4",
             "declare a variable named 'num' and assign it a value of 4"
@@ -13,7 +13,7 @@
         "instruction": "Describe this code",
         "challenge": "let num;",
         "challengeType": "describe",
-        "answerBlockList": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "it's value"],
+        "answerOptions": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "its value"],
         "validAnswers": [
             "declare a new variable named 'num'",
             "create a new variable named 'num'"
@@ -23,7 +23,7 @@
         "instruction": "Describe this code",
         "challenge": "let hasUmbrella = true;",
         "challengeType": "describe",
-        "answerBlockList": ["create", "declare", "a variable", "named", "'hasUmbrella'", "and assign it a", "value of", "false", "true", "call", "print", "it's value"],
+        "answerOptions": ["create", "declare", "a variable", "named", "'hasUmbrella'", "and assign it a", "value of", "false", "true", "call", "print", "it's value"],
         "validAnswers": [
             "create a variable named 'hasUmbrella' and assign it a value of true",
             "declare a variable named 'hasUmbrella' and assign it a value of true"
@@ -33,7 +33,7 @@
         "instruction": "Write code",
         "challengeType": "write code",
         "challenge": "declare a variable named 'hasUmbrella' and assign it a value of true",
-        "answerBlockList": ["let", "hasUmbrella", "=", "True", "'hasUmbrella'", "true", "false", "declare", "variable", "is" ],
+        "answerOptions": ["let", "hasUmbrella", "=", "True", "'hasUmbrella'", "true", "false", "declare", "variable", "is" ],
         "validAnswers": [
             "let hasUmbrella = true;"
         ]
