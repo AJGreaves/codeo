@@ -1,14 +1,26 @@
 [
     {
         "code": "let num = 4;",
-        "description": "create a variable named 'num' and assign it a value of 4"
+        "answerBlockList": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "it's value"],
+        "validAnswers": [
+            "create a variable named 'num' and assign it a value of 4",
+            "declare a variable named 'num' and assign it a value of 4"
+        ]
     },
     {
         "code": "let num;",
-        "description": "create a new variable named 'num'"
+        "answerBlockList": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "it's value"],
+        "validAnswers": [
+            "declare a new variable named 'num'",
+            "create a new variable named 'num'"
+        ]
     },
     {
         "code": "let hasUmbrella = True;",
-        "description": "create a variable named 'hasUmbrella and assign it a value of True"
+        "answerBlockList": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "it's value"],
+        "validAnswers": [
+            "create a variable named 'hasUmbrella and assign it a value of True",
+            "declare a variable named 'hasUmbrella and assign it a value of True"
+        ]
     }
 ]
