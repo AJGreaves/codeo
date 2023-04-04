@@ -17,10 +17,10 @@
     },
     {
         "code": "let hasUmbrella = True;",
-        "answerBlockList": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "it's value"],
+        "answerBlockList": ["create", "declare", "a variable", "named", "'hasUmbrella'", "and assign it a", "value of", "False", "True", "call", "print", "it's value"],
         "validAnswers": [
-            "create a variable named 'hasUmbrella and assign it a value of True",
-            "declare a variable named 'hasUmbrella and assign it a value of True"
+            "create a variable named 'hasUmbrella' and assign it a value of True",
+            "declare a variable named 'hasUmbrella' and assign it a value of True"
         ]
     }
 ]
