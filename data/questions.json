@@ -1,0 +1,14 @@
+[
+    {
+        "code": "let num = 4;",
+        "description": "create a variable named 'num' and assign it a value of 4"
+    },
+    {
+        "code": "let num;",
+        "description": "create a new variable named 'num'"
+    },
+    {
+        "code": "let hasUmbrella = True;",
+        "description": "create a variable named 'hasUmbrella and assign it a value of True"
+    }
+]

@@ -1,1 +1,6 @@
-console.log("test");
+fetch('data/questions.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data); 
+    })
+    .catch(error => console.error(error));
