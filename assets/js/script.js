@@ -46,7 +46,7 @@ function displayQuestion(question) {
 /**
 * Displays the answer options for a given question on the HTML page.
 * @param {Object} question - The question object containing the answer options.
-* This function logs the answer options to the console and then dynamically generates HTML
+* This function shuffles the answer options and then dynamically generates HTML
 * content to display the answer options on the page. Each answer option is displayed as a
 * clickable block within the "answerOptionsBox" div element.
 * Finally, event listeners are added to each option block, so that when an option block is clicked,
@@ -54,7 +54,7 @@ function displayQuestion(question) {
 */
 function displayAnswerOptions(question) {
     console.log(question.answerOptions);
-    let answerOptions = question.answerOptions;
+    let answerOptions = question.answerOptions.sort(() => Math.random() - 0.5);
     let htmlContent = ``
     for (i = 0; i < answerOptions.length; i++) {
         htmlContent += `<div class="optionBlock">${answerOptions[i]}</div>`;
