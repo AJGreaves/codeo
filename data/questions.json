@@ -5,8 +5,8 @@
         "challengeType": "describe",
         "answerOptions": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "its value"],
         "validAnswers": [
-            "create a variable named 'num' and assign it a value of 4",
-            "declare a variable named 'num' and assign it a value of 4"
+            "declare a variable named 'num' and assign it a value of 4",
+            "create a variable named 'num' and assign it a value of 4"
         ]
     },
     {

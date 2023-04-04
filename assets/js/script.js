@@ -1,3 +1,5 @@
+let displayedQuestion = "";
+
 fetch('data/questions.json')
     .then(response => response.json())
     .then(data => {
@@ -5,10 +7,11 @@ fetch('data/questions.json')
         let question = data[0];
         displayQuestion(question);
         displayAnswerOptions(question);
+        displayedQuestion = question;
     })
     .catch(error => console.error(error));
 
-let playBtn = document.querySelector('#playBtn');
+let submitBtn = document.querySelector('#submitBtn');
 
 /**
 * Changes the class name of the play button based on the type of mouse event received.
@@ -20,16 +23,17 @@ let playBtn = document.querySelector('#playBtn');
 */
 function clickButton(event) {
     if (event.type === "mousedown") {
-        playBtn.classList.remove("button-up");
-        playBtn.classList.add("button-down");
+        submitBtn.classList.remove("button-up");
+        submitBtn.classList.add("button-down");
     } else if (event.type === "mouseup") {
-        playBtn.classList.remove("button-down");
-        playBtn.classList.add("button-up");
+        submitBtn.classList.remove("button-down");
+        submitBtn.classList.add("button-up");
+        checkAnswer();
     }
 }
 
-playBtn.addEventListener("mousedown", clickButton);
-playBtn.addEventListener("mouseup", clickButton);
+submitBtn.addEventListener("mousedown", clickButton);
+submitBtn.addEventListener("mouseup", clickButton);
 
 function displayQuestion(question) {
     console.log(question.challenge);
@@ -83,4 +87,23 @@ function selectBlock() {
         answerBox.removeChild(this);
         answerOptionsBox.appendChild(this);
     }
+}
+
+
+function checkAnswer() {
+    let answerBox = document.getElementById("answerBox");
+    let optionBlocks = answerBox.getElementsByClassName("optionBlock");
+    let guess = "";
+
+    for (i = 0; i < optionBlocks.length; i++) {
+        guess += optionBlocks[i].textContent + " ";
+    }
+
+    if (displayedQuestion.validAnswers.includes(guess.slice(0, -1))) {
+        alert("correct!");
+    } else {
+        alert(`Incorrect, the correct answer is:
+        ${displayedQuestion.validAnswers[0]}`);
+    }
+
 }
