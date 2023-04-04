@@ -2,6 +2,7 @@ fetch('data/questions.json')
     .then(response => response.json())
     .then(data => {
         console.log(data); 
+        displayQuestion(data[0]);
     })
     .catch(error => console.error(error));
 
@@ -27,3 +28,15 @@ function clickButton(event) {
 
 playBtn.addEventListener("mousedown", clickButton);
 playBtn.addEventListener("mouseup", clickButton);
+
+function displayQuestion(question) {
+    console.log(question);
+    document.querySelector("#instruction").innerText = question.instruction;
+    let challengeBox = document.querySelector("#challenge");
+    challengeBox.innerText = question.challenge;
+    if (question.challengeType === "describe") {
+        challengeBox.classList.add("code");
+    } else if (question.challengeType === "write code") {
+        challengeBox.classList.remove("code");
+    }
+}
