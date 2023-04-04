@@ -1,5 +1,6 @@
 [
     {
+        "question": "Describe what the following code does",
         "code": "let num = 4;",
         "answerBlockList": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "it's value"],
         "validAnswers": [
@@ -8,6 +9,7 @@
         ]
     },
     {
+        "question": "Describe what the following code does",
         "code": "let num;",
         "answerBlockList": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "it's value"],
         "validAnswers": [
@@ -16,6 +18,7 @@
         ]
     },
     {
+        "question": "Describe what the following code does",
         "code": "let hasUmbrella = True;",
         "answerBlockList": ["create", "declare", "a variable", "named", "'hasUmbrella'", "and assign it a", "value of", "False", "True", "call", "print", "it's value"],
         "validAnswers": [
