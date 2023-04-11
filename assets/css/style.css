@@ -10,16 +10,11 @@ body {
     font-family: 'Anonymous Pro', monospace;
 }
 
-h1, h2 {
-    text-align: center;
-}
-
 /* Structural elements */
 
 body {
     background-color: rgb(54, 54, 54);
     color: white;
-    font-size: 1.3rem;
 }
 
 #outer-game-wrapper {
@@ -36,7 +31,7 @@ body {
 }
 
 .game-box {
-    height: 30%;
+    height: 32%;
     padding-top: 1rem;
     border-bottom: lightslategray 1px solid;
 }

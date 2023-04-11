@@ -3,7 +3,7 @@
         "instruction": "Describe this code",
         "challenge": "let num = 4;",
         "challengeType": "describe",
-        "answerOptions": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "its value"],
+        "answerOptions": ["declare a variable", "named", "'num'", "and assign it a value of", "4", "5", "call", "print", "its value"],
         "validAnswers": [
             "declare a variable named 'num' and assign it a value of 4",
             "create a variable named 'num' and assign it a value of 4"
@@ -15,8 +15,8 @@
         "challengeType": "describe",
         "answerOptions": ["create", "declare", "a variable", "named", "'num'", "and assign it a", "value of", "4", "5", "call", "print", "its value"],
         "validAnswers": [
-            "declare a new variable named 'num'",
-            "create a new variable named 'num'"
+            "declare a variable named 'num'",
+            "create a variable named 'num'"
         ]
     },
     {
@@ -33,7 +33,7 @@
         "instruction": "Write code",
         "challengeType": "write code",
         "challenge": "declare a variable named 'hasUmbrella' and assign it a value of true",
-        "answerOptions": ["let", "hasUmbrella", "=", "True", "'hasUmbrella'", "true", "false", "declare", "variable", "is" ],
+        "answerOptions": ["let", "hasUmbrella", "=", "True", "'hasUmbrella'", "true", "false", "declare", "variable", "is", ";" ],
         "validAnswers": [
             "let hasUmbrella = true;"
         ]
